@@ -21,11 +21,6 @@ pipeline {
             	sh 'chmod 700 ./jenkins/scripts/deliver.sh'
                 sh './jenkins/scripts/deliver.sh'
             }
-        }
-        stage('Complete'){
-			steps {
-				echo 'Job Completes!'
-			}
-        }
+	}
     }
 }
